@@ -10,6 +10,7 @@
   --font-size-filter: 16px;
   --font-size-route-panel: 14px;
   --font-size-route-panel-small: 12px;
+  
 
   /* Sizing/Scaling */
   --ui-scale: 1;
@@ -46,7 +47,7 @@
 
   /* Filter Panel */
   --fp-accent:      #E17C05;
-  --filter-panel-width: clamp(250px, 15vw, 400px);
+  --filter-panel-width: clamp(260px, 19vw, 550px);
 
   /* Route Panel */
   --rp-accent:     #57cd6b;
@@ -687,6 +688,10 @@ body {
   min-width: 0;
 }
 
+.filter-item--child {
+  padding-left: 20px;
+}
+
 
 /* --- 9. Route Legend --- */
 
@@ -743,17 +748,27 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px 8px;
+  padding: 8px 18px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  border-radius: 6px;
+  transition: background 0.15s ease;
 }
 
 .sub-filter-toggle img {
   filter: invert(1) opacity(0.5);
   pointer-events: none;
   transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.sub-filter-toggle.is-open img {
+  transform: rotate(0deg);
+}
+
+.sub-filter-toggle:hover {
+  background: var(--hover-bg);
 }
 
 .sub-filter-toggle:hover img {
@@ -1076,7 +1091,7 @@ body {
 #welcome-tab-bar {
   display: flex;
   flex-shrink: 0;
-  padding: 20px 32px 0;
+  padding: 8px 10px 8px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 #welcome-tab-bar-inner {
@@ -1094,7 +1109,7 @@ body {
   color: var(--text-muted);
   font-size: 1.25rem;
   font-weight: 500;
-  padding: 14px 0;
+  padding: 14px 3px;
   border-radius: 7px;
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
@@ -1187,7 +1202,7 @@ body {
 
 .support-card-text {
   margin: 0 !important;
-  font-size: 1.05rem !important;
+  font-size: 1.05rem;
   line-height: 1.7;
   color: var(--text-default);
 }
@@ -1228,15 +1243,15 @@ body {
 .guide-controls {
   font-size: 1.05em;
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 5px 16px;
+  grid-template-columns: 140px 1fr;
+  gap: 14px 36px;
   margin: 0 0 10px 0;
   align-items: baseline;
 }
 .guide-controls dt {
   font-weight: 600;
   color: #fff;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .guide-controls dd {
   margin: 0;
@@ -1473,6 +1488,9 @@ body {
 }
 #map-ctrl-nav img { pointer-events: none; filter: invert(1) opacity(0.7); }
 #map-ctrl-nav button:hover img { filter: invert(1) opacity(1); }
+#map-ctrl-nav button.active { background: var(--active-bg); }
+#map-ctrl-nav button.active img { filter: invert(1) opacity(1) sepia(1) saturate(3) hue-rotate(70deg); }
+#map-ctrl-nav button.active:hover { background: var(--active-bg-strong); }
 
 .map-ctrl-divider-v {
   width: 1px;
@@ -1621,6 +1639,7 @@ button:hover img { filter: invert(1) opacity(1); }
   :root {
     --font-size-default-mobile: 13px;
     --font-size-header-mobile: 14px;
+    --font-size-title-mobile: 20px;
   }
 
   /* --- Welcome modal: fix size + reduce fonts --- */
@@ -1630,39 +1649,67 @@ button:hover img { filter: invert(1) opacity(1); }
     min-width: 0;
   }
   .welcome-tab {
-    font-size: 1rem;
+    font-size: var(--font-size-header-mobile);
     padding: 10px 0;
   }
   #welcome-modal-body {
     padding: 20px 16px 16px;
   }
   #welcome-modal-body h2 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-title-mobile);
     margin-bottom: 14px;
   }
   #welcome-modal-body p {
-    font-size: 0.92rem;
+    font-size: var(--font-size-default-mobile);
     line-height: 1.6;
     margin-bottom: 12px;
   }
   #welcome-modal-label {
-    font-size: 0.78rem;
+    font-size: var(--font-size-header-mobile);
     margin-bottom: 10px;
   }
   .welcome-disclaimer {
-    font-size: 0.92rem;
+    font-size: var(--font-size-default-mobile);
     padding: 10px 14px;
     margin-top: 14px;
   }
-  .welcome-disclaimer-icon { font-size: 1.4rem; }
-  .guide-section h3 { font-size: 1rem; }
+  .support-card-heading {
+    font-size: var(--font-size-title-mobile);
+  }
+  .support-card-text {
+    font-size: var(--font-size-default-mobile);
+    line-height: 1.6;
+  }
+  .welcome-disclaimer-icon { 
+    font-size: 1.2rem; 
+  }
+  .guide-section h3 { 
+    font-size: var(--font-size-header-mobile); 
+  }
+  .guide-sublabel, #welcome-modal-body p.guide-sublabel { 
+    font-size: var(--font-size-header-mobile); 
+  }
+  .guide-controls {
+    font-size: var(--font-size-default-mobile);
+    gap: 10px 1px;
+    grid-template-columns: 130px 1fr;
+   }
+  .guide-section li { font-size: var(--font-size-default-mobile); line-height: 1.5; }
   /* About tab: unfloat photo so it doesn't overflow narrow screens */
-  .about-photo {
+  /* .about-photo {
     float: none;
     display: block;
-    width: 100%;
-    max-width: 180px;
+    width: 80%;
+    max-width: 100px;
     margin: 0 auto 14px;
+  } */
+   .about-photo {
+    float: right;
+    width: 250px;
+    max-width: 40%;
+    margin: 0 0 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--panel-border);
   }
   /* Disclaimer: align to top so "Before you go…" h2 isn't clipped */
   #welcome-disclaimer-page {
@@ -1674,8 +1721,8 @@ button:hover img { filter: invert(1) opacity(1); }
     max-height: none;
     overflow-y: auto;
   }
-  #welcome-disclaimer-page-inner h2 { font-size: 1.3rem; }
-  #welcome-understand-btn { font-size: 0.92rem; padding: 10px 28px; }
+  #welcome-disclaimer-page-inner h2 { font-size: var(--font-size-title-mobile); }
+  #welcome-understand-btn { font-size: var(--font-size-default-mobile); padding: 10px 28px; }
 
   /* --- Map controls: show on mobile, hide desktop-only sections --- */
   #ui-scale-controls,
@@ -1729,7 +1776,7 @@ button:hover img { filter: invert(1) opacity(1); }
 
   /* --- Filter panel sizing (~2pt reduction) --- */
   #panel {
-    width: calc(100vw - 20px) !important;
+    width: clamp(250px, 92vw, calc(100vw - 30px)) !important; 
     max-height: 55vh;
     font-size: var(--font-size-default-mobile);
   }
@@ -1755,6 +1802,10 @@ button:hover img { filter: invert(1) opacity(1); }
   .section-header {
     padding: 5px 10px;
     font-size: var(--font-size-header-mobile);
+  }
+  .filter-item { padding: 3px 8px; }
+  .sub-filter-toggle { 
+    padding: 6px 22px; 
   }
   .section-body {
     padding: 5px 10px 8px;

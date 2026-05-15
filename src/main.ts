@@ -177,9 +177,17 @@ function onLegendClick({ scheme, key, keys }) {
     renderAll();
 }
 
+function _allCategoryKeys(): string[] {
+    const flat = Object.keys(WAYPOINT_FILTERS.category);
+    const grouped = WAYPOINT_FILTERS.groups
+        ? Object.values(WAYPOINT_FILTERS.groups).flatMap((g: any) => Object.keys(g.categories))
+        : [];
+    return [...flat, ...grouped];
+}
+
 function onFilterChange(newActiveTypes) {
     state.activeTypes = newActiveTypes;
-    const allKeys = Object.keys(WAYPOINT_FILTERS.category);
+    const allKeys = _allCategoryKeys();
     document.getElementById('toggle-all-markers-btn')
         .classList.toggle('btn-active', newActiveTypes.size === allKeys.length);
     renderAll();
@@ -663,7 +671,7 @@ document.querySelectorAll('.section-header').forEach(header => {
 });
 
 document.getElementById('toggle-all-markers-btn').addEventListener('click', () => {
-    const allKeys = Object.keys(WAYPOINT_FILTERS.category);
+    const allKeys = _allCategoryKeys();
     state.activeTypes = state.activeTypes.size === allKeys.length
         ? new Set()
         : new Set(allKeys);
@@ -674,7 +682,7 @@ document.getElementById('toggle-all-markers-btn').addEventListener('click', () =
 
 // Sync initial highlighted state on page load
 {
-    const allKeys = Object.keys(WAYPOINT_FILTERS.category);
+    const allKeys = _allCategoryKeys();
     document.getElementById('toggle-all-markers-btn')
         .classList.toggle('btn-active', state.activeTypes.size === allKeys.length);
 }
@@ -711,7 +719,7 @@ document.getElementById('cluster-toggle-btn').addEventListener('click', () => {
 
 const SCALE_STEP = 0.1, SCALE_MIN = 0.5, SCALE_MAX = 2.2;
 const isMobile = window.matchMedia('(max-width: 600px)').matches;
-let uiScale = parseFloat(localStorage.getItem('ui-scale') ?? (isMobile ? '0.8' : '1'));
+let uiScale = isMobile ? 0.8 : parseFloat(localStorage.getItem('ui-scale') ?? '1');
 
 function applyUIScale() {
     document.documentElement.style.setProperty('--ui-scale', String(uiScale));
@@ -732,7 +740,7 @@ document.getElementById('ui-scale-up-btn')?.addEventListener('click', () => {
 
 // --- MARKER SCALE ---
 
-let markerScale = parseFloat(localStorage.getItem('marker-scale') ?? (isMobile ? '0.8' : '1'));
+let markerScale = isMobile ? 0.8 : parseFloat(localStorage.getItem('marker-scale') ?? '1');
 
 function applyMarkerScale() {
     document.documentElement.style.setProperty('--marker-scale', String(markerScale));
@@ -761,18 +769,22 @@ document.querySelectorAll<HTMLInputElement>('#map-basemap-control input[type=rad
 
 document.querySelectorAll<HTMLInputElement>('#map-overlay-control input[type=checkbox]').forEach(cb => {
     cb.addEventListener('change', () => {
-        if (cb.dataset.layer === 'terrain-hillshade-layer') {
-            if (cb.checked) {
-                map.setTerrain({ source: 'aws-terrain-dem', exaggeration: 1.0 });
-                map.easeTo({ zoom: 13, pitch: 65, duration: 800, essential: true });
-            } else {
-                map.setTerrain(null);
-                map.easeTo({ pitch: 0, duration: 800, essential: true });
-            }
-        } else {
-            map.setLayoutProperty(cb.dataset.layer!, 'visibility', cb.checked ? 'visible' : 'none');
-        }
+        map.setLayoutProperty(cb.dataset.layer!, 'visibility', cb.checked ? 'visible' : 'none');
     });
+});
+
+const _3dBtn = document.getElementById('map-3d-btn')!;
+let _3dActive = false;
+_3dBtn.addEventListener('click', () => {
+    _3dActive = !_3dActive;
+    _3dBtn.classList.toggle('active', _3dActive);
+    if (_3dActive) {
+        map.setTerrain({ source: 'aws-terrain-dem', exaggeration: 1.0 });
+        map.easeTo({ zoom: 13, pitch: 65, duration: 800, essential: true });
+    } else {
+        map.setTerrain(null);
+        map.easeTo({ pitch: 0, duration: 800, essential: true });
+    }
 });
 
 document.getElementById('map-zoom-in-btn')?.addEventListener('click', () => map.zoomIn({ duration: 200, essential: true }));

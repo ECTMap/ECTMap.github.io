@@ -602,17 +602,21 @@ function _drawElevationChart(pts) {
         hoverLine.attr('x1', cx).attr('x2', cx).style('display', null);
         hoverDot.attr('cx', cx).attr('cy', cy).style('display', null);
 
-        const tipLeft = margin.left + cx + (cx > width * 0.68 ? -88 : 8);
-        const tipTop  = margin.top  + cy - 28;
-
         tooltip
             .style('display', null)
-            .style('left', `${tipLeft}px`)
-            .style('top',  `${tipTop}px`)
             .html(totalDistKm < 2
                 ? `Dist: ${(distKm * 1000).toFixed(0)} m | Elev: ${Math.round(elevation)} m`
                 : `Dist: ${distKm.toFixed(2)} km | Elev: ${Math.round(elevation)} m`
             );
+
+        const tipWidth = (tooltip.node() as HTMLElement).offsetWidth;
+        const containerWidth = (container as HTMLElement).offsetWidth;
+        const tipLeft = Math.min(margin.left + cx + 8, containerWidth - tipWidth - 4);
+        const tipTop  = margin.top + cy - 52;
+
+        tooltip
+            .style('left', `${tipLeft}px`)
+            .style('top',  `${tipTop}px`);
 
         _onHover?.({ lat, lon, distanceKm: distKm, elevation });
     }

@@ -7,10 +7,20 @@ const BASE = "/data";
 
 export const WAYPOINT_FILTERS = {
     category: {
-        trailhead:  {label: 'Trailheads',       color: '#ffffff'}, // Fallback color as trailhead marker colors determined by colorby state
-        campsite:   {label: 'Campsites',        color: '#9b59b6'}, // Fallback purple, but actual campsite marker colors are determined by campsite quality when that dropdown is open (see categoryColor function in filterPanel.js)
+        trailhead:  {label: 'Trailheads',       color: '#ffffff'},
+        campsite:   {label: 'Campsites',        color: '#9b59b6'}, 
         water:      {label: 'Water Sources',    color: '#3498db'},
-        camera:     {label: 'Scenic Spots',     color: '#f1c40f'},
+        camera:     {label: 'Scenic Spots',     color: '#f1de0f'},
+    },
+    groups: {
+        supplies: {
+            label: 'Supplies',
+            categories: {
+                food:      { label: 'Food & Resupply', color: '#d922e6' },
+                gear:      { label: 'Gear',            color: '#0f629a' },
+                emergency: { label: 'Emergency',       color: '#e74c3c' },
+            }
+        }
     }
 };
 
@@ -62,13 +72,15 @@ export let ROUTE_NORTH_ENDS = {};
 // --- INIT GEOJSON DATA ---
     // Waits for all the data to load -> `await` is blocking
 export const data: any = await Promise.all([
-    d3.json(`${BASE}/waypoints/other_waypoints.geojson`),
     d3.json(`${BASE}/waypoints/site_waypoints.geojson`),
     d3.json(`${BASE}/waypoints/ect_waypoints.geojson`),
+    d3.json(`${BASE}/waypoints/water_waypoints.geojson`),
+    d3.json(`${BASE}/waypoints/poi_waypoints.geojson`),
+    d3.json(`${BASE}/waypoints/food_waypoints.geojson`),
+    d3.json(`${BASE}/waypoints/gear_waypoints.geojson`),
+    d3.json(`${BASE}/waypoints/emergency_waypoints.geojson`),
     d3.json(`${BASE}/routes/ect_routes.geojson`)
-    
-    
-    ]).then(([other_waypoints, site_waypoints, ect_waypoints, routes]: any[]) => {
+    ]).then(([site_waypoints, ect_waypoints, water_waypoints, poi_waypoints, food_waypoints, gear_waypoints, emergency_waypoints, routes]: any[]) => {
 
         // Tag sources that don't already have a category
         ect_waypoints.features.forEach(f => f.properties.category = 'trailhead');
@@ -77,7 +89,11 @@ export const data: any = await Promise.all([
         const all_waypoints = {
             type: "FeatureCollection",
             features: [
-                ...other_waypoints.features,
+                ...water_waypoints.features,
+                ...poi_waypoints.features,
+                ...food_waypoints.features,
+                ...gear_waypoints.features,
+                ...emergency_waypoints.features,
                 ...site_waypoints.features,
                 ...ect_waypoints.features,
             ]
@@ -146,7 +162,7 @@ export const data: any = await Promise.all([
             color: ROUTE_TITLE_COLORS[t],
         }));
 
-        return { other_waypoints, site_waypoints, ect_waypoints, routes, all_waypoints,
+        return { site_waypoints, ect_waypoints, water_waypoints, poi_waypoints, food_waypoints, gear_waypoints, emergency_waypoints, routes, all_waypoints,
                  routeById: new Map(routes.features.map(f => [f.id, f])) };
 
     }).catch(error => {

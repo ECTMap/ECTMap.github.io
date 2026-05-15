@@ -48,6 +48,14 @@ export function setColorBy(scheme) {
     // 3. Trailheads with a difficulty value ("Difficulty") -> color by difficulty
     // 4. All other waypoints -> look up the category's default color
 
+function _categoryColor(cat: string): string | undefined {
+    if (WAYPOINT_FILTERS.category[cat]) return WAYPOINT_FILTERS.category[cat].color;
+    for (const group of Object.values(WAYPOINT_FILTERS.groups ?? {})) {
+        if ((group as any).categories[cat]) return (group as any).categories[cat].color;
+    }
+    return undefined;
+}
+
 export function categoryColor(feature) {
     const props = feature.properties;
 
@@ -81,7 +89,7 @@ export function categoryColor(feature) {
     }
 
     // 4. Default/Fallback: look up the category's base color
-    return WAYPOINT_FILTERS.category[props.category]?.color ?? WAYPOINT_FILTERS.category.trailhead.color;
+    return _categoryColor(props.category) ?? WAYPOINT_FILTERS.category.trailhead.color;
 }
 
 
@@ -284,33 +292,63 @@ export function init(container, onFilterChange, counts = {}) {
     _container = container;
     _onFilterChange = onFilterChange;
 
-    // Build one checkbox row per waypoint category
-    _container.innerHTML = Object.entries(WAYPOINT_FILTERS.category).map(([key, { label, color }]) => {
+    // Build one checkbox row per flat waypoint category
+    const flatHTML = Object.entries(WAYPOINT_FILTERS.category).map(([key, { label, color }]) => {
         const countBadge = counts[key] != null
             ? ` <span class="filter-count">(${counts[key]})</span>`
             : '';
 
-        // campsites get an extra quality slider -> noUiSlider
-        if (key === 'campsite') {
-            return _buildCampsiteHTML(key, color, countBadge);
-        }
+        if (key === 'campsite') return _buildCampsiteHTML(key, color, countBadge);
 
         return `
             <label class="filter-item">
                 <input type="checkbox" class="type-checkbox" value="${key}" checked>
-                <span class="filter-dot" style="background:${color}"></span> 
+                <span class="filter-dot" style="background:${color}"></span>
                 ${label}${countBadge}
             </label>
         `;
     }).join('');
 
+    // Build collapsible group sections
+    const groupHTML = WAYPOINT_FILTERS.groups ? Object.entries(WAYPOINT_FILTERS.groups).map(([groupKey, group]) => {
+        const childRows = Object.entries(group.categories).map(([key, { label, color }]) => {
+            const countBadge = counts[key] != null ? ` <span class="filter-count">(${counts[key]})</span>` : '';
+            return `
+                <label class="filter-item filter-item--child">
+                    <input type="checkbox" class="type-checkbox" value="${key}" checked>
+                    <span class="filter-dot" style="background:${color}"></span>
+                    ${label}${countBadge}
+                </label>
+            `;
+        }).join('');
+
+        return `
+            <div class="filter-group" data-group="${groupKey}">
+                <div class="filter-item-group">
+                    <label class="filter-item">
+                        <input type="checkbox" class="group-checkbox" data-group="${groupKey}" checked>
+                        ${group.label}
+                    </label>
+                    <button class="sub-filter-toggle group-toggle is-open" title="Expand ${group.label}">
+                        <img src="/icons/UI/arrow-up-to-line.svg" width="12" height="12" alt="">
+                    </button>
+                </div>
+                <div class="sub-filter-section open" id="group-${groupKey}-items">
+                    ${childRows}
+                </div>
+            </div>
+        `;
+    }).join('') : '';
+
+    _container.innerHTML = flatHTML + groupHTML;
+
     // Attach all category checkboxes
     _container.querySelectorAll('.type-checkbox').forEach(cb => {
-        cb.addEventListener('change', _handleChange); // On any checkbox change, collect the new active categories and fire the filter change callback to update the map
+        cb.addEventListener('change', _handleChange);
     });
 
     // Attach the campsite quality dropdown toggle & update look
-    const subToggle = _container.querySelector('.sub-filter-toggle');
+    const subToggle = _container.querySelector('.sub-filter-toggle:not(.group-toggle)');
     if (subToggle) {
         subToggle.addEventListener('click', (e) => {
 
@@ -319,11 +357,32 @@ export function init(container, onFilterChange, counts = {}) {
             const section = _container.querySelector('#campsite-quality-filter');
 
             section.classList.toggle('open', _campsiteQualityOpen);
-            (subToggle as HTMLElement).style.transform = _campsiteQualityOpen ? 'rotate(180deg)' : '';
+            (subToggle as HTMLElement).classList.toggle('is-open', _campsiteQualityOpen);
             if (_campsiteQualityOpen) _refreshQualityCount();
             _handleChange();
         });
     }
+
+    // Attach group master checkboxes (check/uncheck all children)
+    _container.querySelectorAll('.group-checkbox').forEach(gcb => {
+        gcb.addEventListener('change', () => {
+            const groupKey = (gcb as HTMLInputElement).dataset.group;
+            _container.querySelectorAll(`#group-${groupKey}-items .type-checkbox`).forEach(cb => {
+                (cb as HTMLInputElement).checked = (gcb as HTMLInputElement).checked;
+            });
+            _handleChange();
+        });
+    });
+
+    // Attach group expand/collapse toggles
+    _container.querySelectorAll('.group-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const section = (btn.closest('.filter-group') as HTMLElement).querySelector('.sub-filter-section');
+            const isOpen = section.classList.toggle('open');
+            (btn as HTMLElement).classList.toggle('is-open', isOpen);
+        });
+    });
 
     // Initialize the noUiSlider (dual-range slider) for campsite quality
     const sliderEl = _container.querySelector('#quality-slider');
@@ -358,6 +417,15 @@ export function render(state, data, updateMarkersFn) {
     // Sync checkbox checked states with the current state.activeTypes
     _container.querySelectorAll('.type-checkbox').forEach(cb => {
         cb.checked = state.activeTypes.has(cb.value);
+    });
+
+    // Sync group master checkboxes: checked if all children active, indeterminate if some
+    _container.querySelectorAll('.group-checkbox').forEach(gcb => {
+        const groupKey = (gcb as HTMLInputElement).dataset.group;
+        const children = [..._container.querySelectorAll(`#group-${groupKey}-items .type-checkbox`)] as HTMLInputElement[];
+        const checkedCount = children.filter(c => c.checked).length;
+        (gcb as HTMLInputElement).checked = checkedCount === children.length;
+        (gcb as HTMLInputElement).indeterminate = checkedCount > 0 && checkedCount < children.length;
     });
 
     // Filter the waypoint feature collection down to only what should be visible

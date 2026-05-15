@@ -13,8 +13,11 @@ export const MAP_CONFIG = {
 const ICON_URLS = {
   trailhead: '/icons/Map/trailhead.svg',
   water:     '/icons/Map/water.svg',
-  camera:    '/icons/Map/mountain.svg',
+  camera:    '/icons/Map/camera.svg',
   campsite:  '/icons/Map/campsite.svg',
+  food:      '/icons/Map/food.svg',
+  gear:      '/icons/Map/gear.svg',
+  emergency: '/icons/Map/emergency.svg',
   recenter:  '/icons/UI/recenter.svg',
 };
 
