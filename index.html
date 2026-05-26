@@ -20,8 +20,8 @@
 
 
     <link rel="canonical" href="https://ectmap.ca/">
-  <script type="module" crossorigin src="/assets/index-B3VQYdev.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Cpadp2Da.css">
+  <script type="module" crossorigin src="/assets/index-Wcyq7EW8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C1ZmnkC-.css">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -83,10 +83,11 @@
                         <p class="guide-sublabel">Map controls panel (top-right)</p>
                         <dl class="guide-controls">
                             <dt><img src="/icons/UI/info-icon.svg" alt="info" class="guide-icon"> Info</dt><dd>Reopen this welcome screen.</dd>
-                            <dt><img src="/icons/UI/zoom-in.svg" alt="+" class="guide-icon"> / <img src="/icons/UI/zoom-out.svg" alt="−" class="guide-icon"></dt><dd>Zoom in and out.</dd>
+                            <dt><img src="/icons/UI/zoom-in.svg" alt="+" class="guide-icon"> / <img src="/icons/UI/zoom-out.svg" alt="-" class="guide-icon"></dt><dd>Zoom in and out.</dd>
                             <dt><img src="/icons/UI/recenter.svg" alt="recenter" class="guide-icon"> Recenter</dt><dd>Fly back to the full-trail overview and reset any tilt or rotation.</dd>
+                            <dt><img src="/icons/UI/3d-view.svg" alt="3D" class="guide-icon"> 3D</dt><dd>Toggle 3D terrain hillshade. Enabling it auto-zooms and tilts the view to show terrain relief.</dd>
                             <dt>Basemap</dt><dd>Switch between Satellite, OpenStreetMap, and Topographic.</dd>
-                            <dt>Overlays</dt><dd>Toggle Contour Lines, place Labels, and 3D Hillshade independently. Enabling 3D Hillshade auto-tilts the view to show terrain relief.</dd>
+                            <dt>Overlays</dt><dd>Toggle Contour Lines and place Labels independently.</dd>
                             <dt>A+ / A&minus;</dt><dd>Scale the UI up or down for your screen size.</dd>
                             <dt>Marker size</dt><dd>Drag the slider to scale all waypoint markers on the map.</dd>
                         </dl>
@@ -109,10 +110,17 @@
                         <p class="guide-sublabel">Markers</p>
                         <dl class="guide-controls">
                             <dt><img src="/icons/Map/trailhead.svg" alt="" class="guide-icon"> Trailheads</dt><dd>Official ECT path endpoints and access points.</dd>
-                            <dt><img src="/icons/Map/campsite.svg" alt="" class="guide-icon"> Campsites</dt><dd>Backcountry sites with quality ratings (1–6). Expand to filter by quality range using the slider.</dd>
+                            <dt><img src="/icons/Map/campsite.svg" alt="" class="guide-icon"> Campsites</dt><dd>Backcountry sites with quality ratings (1-6). Expand to filter by quality range using the slider.</dd>
                             <dt><img src="/icons/Map/water.svg" alt="" class="guide-icon"> Water Sources</dt><dd>Streams, ponds, and reliable water points.</dd>
                             <dt><img src="/icons/Map/camera.svg" alt="" class="guide-icon"> Scenic Spots</dt><dd>Notable viewpoints and photogenic locations.</dd>
                         </dl>
+                        <p class="guide-sublabel">Supplies</p>
+                        <dl class="guide-controls">
+                            <dt><img src="/icons/Map/food.svg" alt="" class="guide-icon"> Food &amp; Resupply</dt><dd>Convenience stores, grocery stops, and resupply points along or near the trail.</dd>
+                            <dt><img src="/icons/Map/gear.svg" alt="" class="guide-icon"> Gear</dt><dd>Outdoor gear shops and outfitters.</dd>
+                            <dt><img src="/icons/Map/emergency.svg" alt="" class="guide-icon"> Emergency</dt><dd>Hospitals, clinics, and emergency services near the trail.</dd>
+                        </dl>
+                        <p>The <strong>Supplies</strong> group can be toggled as a whole or expanded to filter individual sub-categories.</p>
                         <p>Use <strong>All</strong> to show or hide all markers at once. Enable <strong>Clustering</strong> to group nearby markers at lower zoom levels. Click any marker on the map to see its details.</p>
                         <p class="guide-sublabel">Route colours</p>
                         <dl class="guide-controls">
@@ -303,6 +311,8 @@
 
     <!-- Route Overview Panel -->
     <div id="route-overview-panel" inert>
+        <div id="route-panel-resize-handle"></div>
+        <div id="route-panel-resize-handle-left"></div>
 
         <div id="route-panel-header">
             <span id="route-panel-title">Route Overview</span>

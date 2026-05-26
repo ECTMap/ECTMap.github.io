@@ -205,7 +205,7 @@
       "type": "Feature",
       "properties": {
         "title": "Bauline trailhead",
-        "notes": "At the northern trailhead. Practically in the community of Bauline - listed due to lack of good sites in the area. Be discreet / respectful. River (just north) + Fire Pit + Garbage Can + Picnic Tables = Hilton.",
+        "notes": "At the northern trailhead. Practically in the community of Bauline - listed due to lack of good sites in the area. Be discreet / respectful. River (just north) + Garbage Can + Picnic Tables = Hilton.",
         "latitude": 47.720571,
         "longitude": -52.835592,
         "elevation": 0.0,
@@ -265,7 +265,7 @@
       "type": "Feature",
       "properties": {
         "title": "Gunners Hole",
-        "notes": "Just north of the stream/bridge, off path about 40m to the west. Nice big bonfire pit and multiple spots to setup tents. Also many other good/great areas to tent in the area.",
+        "notes": "Just north of the stream/bridge, off path about 40m to the west. Multiple spots to setup tents. Also many other good/great areas to tent in the area.",
         "latitude": 47.471087,
         "longitude": -52.690958,
         "elevation": 25.0,
@@ -325,7 +325,7 @@
       "type": "Feature",
       "properties": {
         "title": "The Spout",
-        "notes": "Just North of the spout, right beside the trail. Small, fairly sheltered tent pad and fire pit on the coast as well as stream with potential swim hole at the bottom. Pretty gorgeous - could be bad in high winds.",
+        "notes": "Just North of the spout, right beside the trail. Small, fairly sheltered tent pad on the coast as well as stream with potential swim hole at the bottom. Pretty gorgeous - could be bad in high winds.",
         "latitude": 47.366324,
         "longitude": -52.726452,
         "elevation": 0.0,
@@ -400,7 +400,7 @@
       "type": "Feature",
       "properties": {
         "title": "Possible Camp",
-        "notes": "Lots of fire pits, but there's just nowhere flat to put a tent. Best to cross to the other side of the rock bridge",
+        "notes": "Nowhere flat to put a tent. Best to cross to the other side of the rock bridge",
         "latitude": 47.534167,
         "longitude": -52.684798,
         "elevation": 132.0,
@@ -535,7 +535,7 @@
       "type": "Feature",
       "properties": {
         "title": "Small Point",
-        "notes": "Established Large field on coast (wind / exposed: get a forecast), plus slightly sheltered area. Water 1/2 km north. Also a few tent spots back into the woods and a fire pit. Has ATV tracks, may be visited by locals (but they're all lovely)",
+        "notes": "Established Large field on coast (wind / exposed: get a forecast), plus slightly sheltered area. Water 1/2 km north. Also a few tent spots back into the woods. Has ATV tracks, may be visited by locals (but they're all lovely)",
         "latitude": 47.743688,
         "longitude": -52.711033,
         "elevation": 0.0,
@@ -973,7 +973,7 @@
       "type": "Feature",
       "properties": {
         "title": "Nook site",
-        "notes": "Little spot fairly sheltered with a small fire pit",
+        "notes": "Little spot fairly sheltered",
         "latitude": 47.529482,
         "longitude": -52.662253,
         "elevation": 35.0,
@@ -1108,7 +1108,7 @@
       "type": "Feature",
       "properties": {
         "title": "Possible Site",
-        "notes": "Nice flat patch, small fire pit - good view. NO WATER",
+        "notes": "Nice flat patch - good view. NO WATER",
         "latitude": 47.777696,
         "longitude": -52.813037,
         "elevation": 140.0,
@@ -1213,7 +1213,7 @@
       "type": "Feature",
       "properties": {
         "title": "Viewing Platform",
-        "notes": "NO WATER likely frequented by locals and certainly on private land. Sunset viewing platform overlooking Little Herring Cove Lake. Picknik tables, small gazebo, fire pit",
+        "notes": "NO WATER likely frequented by locals and certainly on private land. Sunset viewing platform overlooking Little Herring Cove Lake. Picknik tables, small gazebo",
         "latitude": 47.74363,
         "longitude": -52.819164,
         "elevation": 161.0,
@@ -1288,7 +1288,7 @@
       "type": "Feature",
       "properties": {
         "title": "Empty Basket Cove",
-        "notes": "Tiny protected spot in woods to east. Just big enough for a 2p, but it's small. has a nice little fire pit though.",
+        "notes": "Tiny protected spot in woods to east. Just big enough for a 2p, but it's small.",
         "latitude": 47.493428,
         "longitude": -52.637567,
         "elevation": 0.0,
@@ -1558,7 +1558,7 @@
       "type": "Feature",
       "properties": {
         "title": "Campsite",
-        "notes": "Has a raised tent platform and small fire pit.",
+        "notes": "Has a raised tent platform.",
         "latitude": 47.624365,
         "longitude": -52.848214,
         "elevation": 0.0,
