@@ -429,21 +429,6 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "North Pond Brook",
-        "notes": "Semi-established Just past the brook there are a few spots in the woods. Somewhat exposed, but better than the fields near the trailhead in windy conditions.",
-        "latitude": 47.661136,
-        "longitude": -52.704118,
-        "elevation": 9.0,
-        "category": "campsite",
-        "site_quality": "4.0",
-        "nearTrailTitles": ["Silver Mine Head"],
-        "id": "8cd5da38"
-      },
-      "geometry": { "type": "Point", "coordinates": [-52.704118, 47.661136] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "title": "Motion / Spout trail junction (walk to the coast)",
         "notes": "Established at Motion / Spout trail junction (walk to the coast). Large field, but somewhat exposed. Water at Raymonds Gulch.",
         "latitude": 47.392974,
