@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECTMap.ca</title>
+    <link rel="stylesheet" href="/src/styles/stylesheet.css" />
+    <!-- Site Metadata -->
+    <meta name="description" content="Interactive East Coast Trail Map to plan your next adventure!">
+    <meta property="og:url" content="https://ectmap.ca/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ECTMap.ca">
+    <meta property="og:site_name" content="ECTMap.ca">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Interactive East Coast Trail Map to plan your next adventure!">
+    <meta property="og:image" content="https://ectmap.ca/images/open_graph_preview.png">
+    <meta property="og:image:width" content="2111">
+    <meta property="og:image:height" content="1188">
+    <meta property="og:image:alt" content="ECTMap.ca trail map preview">
+
+
+    <link rel="canonical" href="https://ectmap.ca/">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R350X91VFH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R350X91VFH');
+</script>
+
+
+<body>
+
+    <div id="welcome-modal" class="open">
+        <div id="welcome-modal-box">
+
+            <div id="welcome-tab-bar">
+                <div id="welcome-tab-bar-inner">
+                    <button class="welcome-tab active" data-tab="welcome">Welcome</button>
+                    <button class="welcome-tab" data-tab="guide">How to Use</button>
+                    <button class="welcome-tab" data-tab="about">About</button>
+                    <button class="welcome-tab" data-tab="resources">Resources</button>
+                </div>
+            </div>
+
+            <div id="welcome-modal-body">
+
+                <!-- Tab: Welcome -->
+                <div class="welcome-tab-pane active" id="welcome-tab-welcome">
+                    <div id="welcome-modal-label">East Coast Trail, Newfoundland &middot; ECTMap.ca</div>
+                    <h2>Welcome to ECTMap.ca!</h2>
+                    <p>An (unnoficial) interactive map for exploring and planning your East Coast Trail adventure. Browse all 25 hiking paths along the Avalon Peninsula, with elevation profiles, waypoints, and stats!</p>
+                    <p>Feel free to dive in and explore, or check the <button class="welcome-inline-link" data-tab-link="guide">How to Use</button> tab for a full feature walkthrough. You can reopen this screen anytime using the <img src="/icons/UI/info-icon.svg" alt="info" width="14" height="14" style="vertical-align:middle;filter:invert(1) opacity(0.75);display:inline;"> button in the top-right.</p>                   
+                    <div class="support-card">
+                        <div class="support-card-body">
+                            <h3 class="support-card-heading">Support the Trail!</h3>
+                            <p class="support-card-text">The <strong>East Coast Trail Association</strong> is a registered non-profit run entirely by volunteers, dedicated to building, maintaining, and promoting the trail. If you find this map useful, please consider supporting the ECTA so we can all enjoy the trails for many more years to come 🌲</p>
+                            <a href="https://eastcoasttrail.com/ways-to-give/" target="_blank" rel="noopener" class="support-cta-btn">Support the ECTA ❤</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Tab: How to Use -->
+                <div class="welcome-tab-pane" id="welcome-tab-guide">
+                    <h2>How to Use</h2>
+
+                    <div class="guide-section">
+                        <h3>Navigating the Map</h3>
+                        <p class="guide-sublabel">Mouse controls</p>
+                        <dl class="guide-controls">
+                            <dt>Left-click &amp; drag</dt><dd>Pan the map.</dd>
+                            <dt>Right-click &amp; drag</dt><dd>Tilt and rotate the view.</dd>
+                            <dt>Scroll wheel</dt><dd>Zoom in and out.</dd>
+                        </dl>
+                        <p class="guide-sublabel">Map controls panel (top-right)</p>
+                        <dl class="guide-controls">
+                            <dt><img src="/icons/UI/info-icon.svg" alt="info" class="guide-icon"> Info</dt><dd>Reopen this welcome screen.</dd>
+                            <dt><img src="/icons/UI/zoom-in.svg" alt="+" class="guide-icon"> / <img src="/icons/UI/zoom-out.svg" alt="-" class="guide-icon"></dt><dd>Zoom in and out.</dd>
+                            <dt><img src="/icons/UI/recenter.svg" alt="recenter" class="guide-icon"> Recenter</dt><dd>Fly back to the full-trail overview and reset any tilt or rotation.</dd>
+                            <dt><img src="/icons/UI/3d-view.svg" alt="3D" class="guide-icon"> 3D</dt><dd>Toggle 3D terrain hillshade. Enabling it auto-zooms and tilts the view to show terrain relief.</dd>
+                            <dt>Basemap</dt><dd>Switch between Satellite, OpenStreetMap, and Topographic.</dd>
+                            <dt>Overlays</dt><dd>Toggle Contour Lines and place Labels independently.</dd>
+                            <dt>A+ / A&minus;</dt><dd>Scale the UI up or down for your screen size.</dd>
+                            <dt>Marker size</dt><dd>Drag the slider to scale all waypoint markers on the map.</dd>
+                        </dl>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3>Route Panel</h3>
+                        <p>Click any coloured trail line on the map to open the <strong>Route Panel</strong> at the bottom. It shows the elevation profile along with key stats: distance, elevation gain/loss, max/min elevation, and difficulty rating.</p>
+                        <dl class="guide-controls">
+                            <dt><img src="/icons/UI/skip-backward.svg" alt="Prev" class="guide-icon"> / <img src="/icons/UI/skip-forward.svg" alt="Next" class="guide-icon"></dt><dd>Step through all 25 routes in trail order without closing the panel.</dd>
+                            <dt><img src="/icons/UI/arrow-left-arrow-right.svg" alt="Reverse" class="guide-icon"></dt><dd>Flip the display to south-to-north order, useful if you're hiking NtS.</dd>
+                            <dt>Hover</dt><dd>Live distance and elevation readout over the chart, with a pin snapped to the corresponding point on the map.</dd>
+                            <dt>Click &amp; drag</dt><dd>Select a segment on the chart; gain, loss, and distance for the selection appear below.</dd>
+                        </dl>
+                    </div>
+
+                    <div class="guide-section">
+                        <h3>Filter Panel</h3>
+                        <p>The <strong>Filters panel</strong> on the left controls what appears on the map.</p>
+                        <p class="guide-sublabel">Markers</p>
+                        <dl class="guide-controls">
+                            <dt><img src="/icons/Map/trailhead.svg" alt="" class="guide-icon"> Trailheads</dt><dd>Official ECT path endpoints and access points.</dd>
+                            <dt><img src="/icons/Map/campsite.svg" alt="" class="guide-icon"> Campsites</dt><dd>Backcountry sites with quality ratings (1-6). Expand to filter by quality range using the slider.</dd>
+                            <dt><img src="/icons/Map/water.svg" alt="" class="guide-icon"> Water Sources</dt><dd>Streams, ponds, and reliable water points.</dd>
+                            <dt><img src="/icons/Map/camera.svg" alt="" class="guide-icon"> Scenic Spots</dt><dd>Notable viewpoints and photogenic locations.</dd>
+                        </dl>
+                        <p class="guide-sublabel">Supplies</p>
+                        <dl class="guide-controls">
+                            <dt><img src="/icons/Map/food.svg" alt="" class="guide-icon"> Food &amp; Resupply</dt><dd>Convenience stores, grocery stops, and resupply points along or near the trail.</dd>
+                            <dt><img src="/icons/Map/gear.svg" alt="" class="guide-icon"> Gear</dt><dd>Outdoor gear shops and outfitters.</dd>
+                            <dt><img src="/icons/Map/emergency.svg" alt="" class="guide-icon"> Emergency</dt><dd>Hospitals, clinics, and emergency services near the trail.</dd>
+                        </dl>
+                        <p>The <strong>Supplies</strong> group can be toggled as a whole or expanded to filter individual sub-categories.</p>
+                        <p>Use <strong>All</strong> to show or hide all markers at once. Enable <strong>Clustering</strong> to group nearby markers at lower zoom levels. Click any marker on the map to see its details.</p>
+                        <p class="guide-sublabel">Route colours</p>
+                        <dl class="guide-controls">
+                            <dt>Route Name</dt><dd>Each of the 25 named paths gets a unique colour.</dd>
+                            <dt>Difficulty</dt><dd>Easy / Moderate / Difficult / Strenuous.</dd>
+                            <dt>Type</dt><dd>Coastal Path vs. Community Walk segments.</dd>
+                        </dl>
+                        <p>Click a legend item to isolate that group; hover to preview it on the map; click again to clear. Use <strong>Filter markers</strong> to show only waypoints near the currently coloured routes.</p>
+                    </div>
+                </div>
+
+                <!-- Tab: About -->
+                <div class="welcome-tab-pane" id="welcome-tab-about">
+                    <h2>About</h2>
+
+                    <div class="guide-section">
+                        <h3>Hi, I'm Max!</h3>
+                            <p>
+                                I'm an outdoors enthusiast and software developer based in Halifax, Nova Scotia.
+                                In summer 2024, my mother and I completed a three-week north-to-south thru-hike of the ECT.
+                            </p>
+                            <img src="/images/we_made_it.jpg" alt="Me and my mom at the end of their ECT through-hike" class="about-photo">
+                            <p>
+                                During the planning of that trip, I found there was a lack of digital maps or data, and that sifting through
+                                <a href="https://docs.google.com/spreadsheets/d/1gqOfKOCJHG-Hg4K1YwH0C-LvIXOzZjNS2UdtoXcUGmA/edit?usp=sharing" target="_blank" rel="noopener">spreadsheets</a>,
+                                as great and as useful as they are, was much more frustrating than I thought it ought to be - given the digital era we seem to find ourselves in - and so throughout
+                                the hike, I used the <a href="https://www.gaiagps.com/" target="_blank" rel="noopener">Gaia GPS app</a> to record waypoints as I went.
+                            </p>
+
+                            <p>
+                                ECTmap.ca is my way of giving back.
+                                It's a personal project born out of love for the ECT, Newfoundland(ers), and a wish to make planning hopefully just a little easier.
+                                I hope it helps you get the most out of your time on the East Coast Trail! &#128516;
+                            </p>
+                            <p>
+                                If you've found this site useful, please consider <a href="https://eastcoasttrail.com/ways-to-give/" target="_blank" rel="noopener">supporting the ECTA</a> &#10084;
+                            </p>
+                    <div class="guide-section">
+                        <h3>Contact</h3>
+                        <p>For suggestions, corrections, or feedback, please reach out at <a href="mailto:feedback@ectmap.ca" target="_blank" rel="noopener">feedback@ectmap.ca</a></p>
+                    </div>
+
+                    </div>
+                    <div class="guide-section">
+                        <h3>Map Attributions</h3>
+                        <dl class="guide-controls">
+                            <dt>Satellite</dt><dd>Tiles &copy; Esri (World Imagery)</dd>
+                            <dt>OpenStreetMap</dt><dd>Tiles &copy; OpenStreetMap contributors, &copy; CARTO (CartoDB Dark)</dd>
+                            <dt>Topographic</dt><dd>Tiles &copy; OpenTopoMap (CC-BY-SA)</dd>
+                            <dt>Labels</dt><dd>&copy; Esri (World Boundaries and Places)</dd>
+                            <dt>Contour Lines</dt><dd>&copy; Natural Resources Canada</dd>
+                            <dt>Terrain / Hillshade</dt><dd>&copy; Mapzen / AWS</dd>
+                        </dl>
+                    </div>
+                    <div class="about-copyright">
+                        <p>The map is built with <strong>MapLibre GL JS</strong>, <strong>D3.js</strong>, and <strong>Vite</strong>, and is hosted free via GitHub Pages at <a href="https://ectmap.ca" target="_blank" rel="noopener">ectmap.ca</a>. Source code is available on <a href="https://github.com/ECTMap/ECTMap.github.io" target="_blank" rel="noopener">GitHub</a>.</p>
+                        <p>&copy; 2026 ECTMap.ca</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Tab: Resources -->
+                <div class="welcome-tab-pane" id="welcome-tab-resources">
+                    <h2>Resources</h2>
+                    <div class="guide-section">
+                        <h3>Official</h3>
+                        <ul>
+                            <li><a href="https://eastcoasttrail.com/" target="_blank" rel="noopener">East Coast Trail Association</a> — eastcoasttrail.com</li>
+                            <li><a href="https://stjohnshikeclub.com/" target="_blank" rel="noopener">St. John's Hiking Club</a> — stjohnshikeclub.com</li>
+                        </ul>
+                    </div>
+                    <div class="guide-section">
+                        <h3>Planning</h3>
+                        <ul>
+                            <li><a href="https://docs.google.com/spreadsheets/d/1gqOfKOCJHG-Hg4K1YwH0C-LvIXOzZjNS2UdtoXcUGmA/edit?usp=sharing" target="_blank" rel="noopener">ECT Thru Hike Spreadsheet</a> — A crowdsourced spreadsheet with detailed information on campsites, water sources, and more.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="welcome-disclaimer-page">
+                <div id="welcome-disclaimer-page-inner">
+                    <h2>Before you go&hellip;</h2>
+                    <div class="welcome-disclaimer">
+                        <span class="welcome-disclaimer-icon">&#9888;</span>
+                        <div><strong>This is an unofficial map - Don't rely on only the information here!</strong> This map is not associated with the East Coast Trail Association. Trail data and waypoint locations were collected in 2024 and likely do not reflect current conditions; water sources dry up, campsites change, and trails get rerouted. Always cross-reference with official ECT resources and exercise your own judgement before heading out. The author accepts no liability for any loss, injury, or harm arising from use of this map. <strong>Please be safe, respectful, and enjoy the nature :)</strong></div>
+                    </div>
+                    <button id="welcome-understand-btn">I Understand</button>
+                </div>
+            </div>
+
+            <div id="welcome-modal-footer">
+                <button id="welcome-close-btn" disabled><span class="btn-spinner"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map fills the full viewport -->
+    <div id="map"></div>
+
+    <!-- Floating Filter Side Panel -->
+    <div id="panel-wrapper">
+
+        <div id="panel">
+
+            <div id="panel-header">
+                <span>Filters</span>
+                <button id="panel-collapse-btn" title="Toggle panel"><img src="/icons/UI/x-1.svg" width="14" height="14" alt="Close"></button>
+            </div>
+
+            <div id="panel-body">
+
+                <!-- Section: Waypoint Filter -->
+                <div class="panel-section">
+
+                    <div class="section-header">
+                        <span>Markers</span>
+                        <span class="section-chevron"><img src="/icons/UI/arrow-up-to-line.svg" width="13" height="13" alt=""></span>
+                    </div>
+
+                    <div class="section-body">
+
+                        <div class="marker-btn-row">
+                            <button id="toggle-all-markers-btn" class="marker-toggle-btn" title="Toggle all markers on/off">All</button>
+                            <button id="cluster-toggle-btn" class="color-cycle-btn">
+                                Marker Clustering: <strong>Off</strong>
+                            </button>
+                        </div>
+
+                        <div id="waypoint-filter"></div>
+
+                    </div>
+                </div>
+
+                <!-- Section: Route Styling -->
+                <div class="panel-section">
+
+                    <div class="section-header">
+                        <span>Routes</span>
+                        <span class="section-chevron"><img src="/icons/UI/arrow-up-to-line.svg" width="13" height="13" alt=""></span>
+                    </div>
+
+                    <div class="section-body">
+                        <div id="route-controls"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end panel-wrapper -->
+
+    <!-- Floating Map Controls Panel (top-right) -->
+    <div id="map-controls">
+
+        <div id="map-ctrl-nav">
+            <button id="map-home-btn"     title="Open info / welcome screen"><img src="/icons/UI/info-icon.svg" alt="Info" width="18" height="18"></button>
+            <button id="map-zoom-in-btn"  title="Zoom in"><img src="/icons/UI/zoom-in.svg" width="20" height="20" alt="Zoom in"></button>
+            <button id="map-zoom-out-btn" title="Zoom out"><img src="/icons/UI/zoom-out.svg" width="20" height="20" alt="Zoom out"></button>
+            <button id="map-reset-btn"    title="Reset map view"><img src="/icons/UI/recenter.svg" alt="Reset" width="18" height="18"></button>
+            <button id="map-3d-btn"       title="Toggle 3D Hillshade"><img src="/icons/UI/3d-view.svg" alt="3D" width="20" height="20"></button>
+            <button id="map-ctrl-collapse-btn" title="Toggle map controls"><img src="/icons/UI/arrow-from-left-line.svg" width="16" height="16" alt="Toggle"></button>
+        </div>
+
+        <div class="map-ctrl-divider-v"></div>
+
+        <div id="map-ctrl-layers">
+
+            <div class="map-ctrl-section" id="map-basemap-control">
+                <label class="map-ctrl-row"><input type="radio" name="basemap" value="esri-satellite-layer" checked> Satellite</label>
+                <label class="map-ctrl-row"><input type="radio" name="basemap" value="carto-dark-layer"> OpenStreetMap</label>
+                <label class="map-ctrl-row"><input type="radio" name="basemap" value="opentopomap-layer"> Topographic</label>
+            </div>
+
+            <div class="map-ctrl-divider"></div>
+
+            <div class="map-ctrl-section" id="map-overlay-control">
+                <label class="map-ctrl-row"><input type="checkbox" data-layer="contours-wms-layer" checked> Contour Lines</label>
+                <label class="map-ctrl-row"><input type="checkbox" data-layer="esri-labels-layer" checked> Labels</label>
+            </div>
+
+            <div class="map-ctrl-divider"></div>
+
+            <div class="map-ctrl-section map-ctrl-buttons" id="ui-scale-controls">
+                <button id="ui-scale-down-btn" title="Decrease UI size">A&#8722;</button>
+                <button id="ui-scale-up-btn"   title="Increase UI size">A&#43;</button>
+                <span   id="ui-scale-label"    class="ui-scale-label">100%</span>
+            </div>
+
+            <div class="map-ctrl-divider"></div>
+
+            <div class="map-ctrl-section" id="marker-size-controls">
+                <div class="marker-size-header">
+                    <span class="map-ctrl-label">Markers</span>
+                    <span id="marker-size-label" class="ui-scale-label">100%</span>
+                </div>
+                <input type="range" id="marker-size-slider"
+                       min="0.5" max="2.0" step="0.05" value="1.0"
+                       class="map-ctrl-slider">
+            </div>
+
+        </div>
+
+    </div><!-- end map-controls -->
+
+    <!-- Route Overview Panel -->
+    <div id="route-overview-panel" inert>
+        <div id="route-panel-resize-handle"></div>
+        <div id="route-panel-resize-handle-left"></div>
+
+        <div id="route-panel-header">
+            <span id="route-panel-title">Route Overview</span>
+
+            <button id="route-panel-prev-btn" title="Previous route" aria-label="Previous route"><img src="/icons/UI/skip-backward.svg" width="18" height="18" alt="Previous route"></button>
+            <button id="route-panel-next-btn" title="Next route" aria-label="Next route"><img src="/icons/UI/skip-forward.svg" width="18" height="18" alt="Next route"></button>
+            <button id="route-panel-reverse-btn" title="Reverse direction"><img src="/icons/UI/arrow-left-arrow-right.svg" width="18" height="18" alt="Reverse"></button>
+            <button id="route-panel-close-btn" title="Close"><img src="/icons/UI/x-1.svg" width="14" height="14" alt="Close"></button>
+        </div>
+
+        <div id="route-panel-body">
+            <div id="route-panel-stats"></div>
+            <div id="route-selection-stats"></div>
+            <div id="route-elevation-chart"></div>
+        </div>
+
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+
+</body>
+</html>

@@ -1,0 +1,1816 @@
+{
+  "type": "FeatureCollection",
+  "name": "site_waypoints",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ryans Garden",
+        "notes": "Established Great grassy field & water. FWIW the water is better here than it is at the designated site 2.8km further on. Overall a much better site than the designated. Can even get to a small pebbly beach",
+        "latitude": 47.002066,
+        "longitude": -52.939052,
+        "elevation": 58.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "50c567cf"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.939052, 47.002066] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Dinn's Beach",
+        "notes": "",
+        "latitude": 46.920815,
+        "longitude": -52.930542,
+        "elevation": 3.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "8965490b"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.930542, 46.920815] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lawler Bay",
+        "notes": "Right beside trail on a mossy patch. so-so water just north. Fairly protected and close to a nice view!",
+        "latitude": 46.993298,
+        "longitude": -52.900194,
+        "elevation": 17.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "72781cb1"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.900194, 46.993298] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Brigus South Beach Garden",
+        "notes": "Little Spot with a picnic table right in the middle of Brigus South. Water just north feeding into the harbour. You'd be the town attraction, but it could be a decent little spot in a pinch!",
+        "latitude": 47.113959,
+        "longitude": -52.88313,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "6f26b748"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.88313, 47.113959] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Small Tent Site",
+        "notes": "One pad on the viewpoint, only one tiny tent pad. Highly exposed, must check wind forecast. Another right beside the trail",
+        "latitude": 47.69694,
+        "longitude": -52.846526,
+        "elevation": 231.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "912ac614"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.846526, 47.69694] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Tenting Site",
+        "notes": "Couple of nice spots overlooking harbour. Very exposed to eastern winds",
+        "latitude": 47.527103,
+        "longitude": -52.658531,
+        "elevation": 10.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Cape Spear", "Deadmans Bay"],
+        "id": "0f28c5ba"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.658531, 47.527103] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Little Bald Head",
+        "notes": "ECTA Established Six/Seven tent platforms, water, toilet. Practically a Hilton... but can busier than one on some weekends.",
+        "latitude": 47.362679,
+        "longitude": -52.728495,
+        "elevation": 43.0,
+        "category": "campsite",
+        "site_quality": "6.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "2393c3b8"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.728495, 47.362679] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Landing Place",
+        "notes": "Semi-established Small spot just off the trail. Good if Little Bald Head is full.",
+        "latitude": 47.358873,
+        "longitude": -52.731493,
+        "elevation": 63.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "bb4ec99e"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.731493, 47.358873] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Stonehenge",
+        "notes": "Off trail to west. Couple of large boulders with a few small gravel patches around them. Some water nearby. Quite exposed.",
+        "latitude": 47.439718,
+        "longitude": -52.673903,
+        "elevation": 6.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Motion"],
+        "id": "2f83b20a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.673903, 47.439718] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Brocks head Pond",
+        "notes": "Established Well used camping area with several spots. On a pond / river. Some bushcrafting type use in the area, please practice LNT.",
+        "latitude": 47.666245,
+        "longitude": -52.848359,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "88bcfc33"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.848359, 47.666245] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Chance Pond River",
+        "notes": "Semi-established Several good spots south (and maybe north) of the river. Great water source.",
+        "latitude": 46.98348,
+        "longitude": -52.901175,
+        "elevation": 8.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "29b0d5f0"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.901175, 46.98348] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Graces Point",
+        "notes": "Established On the approach to Red Head. Several grassy fields on exposed costal cliffs. The water source is not great, likely have to carry in dry conditions.",
+        "latitude": 47.72024,
+        "longitude": -52.70726,
+        "elevation": 72.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "113c71d1"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.70726, 47.72024] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Houlihans River",
+        "notes": "Semi-established Field on north side, some areas in the woods to the south.",
+        "latitude": 47.658074,
+        "longitude": -52.702492,
+        "elevation": 8.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Silver Mine Head"],
+        "id": "ca40edfc"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.702492, 47.658074] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bauline trailhead",
+        "notes": "At the northern trailhead. Practically in the community of Bauline - listed due to lack of good sites in the area. Be discreet / respectful. River (just north) + Garbage Can + Picnic Tables = Hilton.",
+        "latitude": 47.720571,
+        "longitude": -52.835592,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "dad99d53"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.835592, 47.720571] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Little Jones Cove",
+        "notes": "Didn't see trees to east or protected spot here!! Very small sheltered spot in the woods just east of trail, in an otherwise exposed area. Water from questionable sources (nearby gullies).",
+        "latitude": 47.502873,
+        "longitude": -52.634671,
+        "elevation": 71.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "b5827f6d"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.634671, 47.502873] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Deep Cove",
+        "notes": "2 or 3 spots in small sheltered area right next to the trail. Good water just north",
+        "latitude": 47.47602,
+        "longitude": -52.6789,
+        "elevation": 50.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "358e0a1c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.6789, 47.47602] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Island Meadow",
+        "notes": "Established Exposed field (wind?). Water about 0.5km south.",
+        "latitude": 46.891749,
+        "longitude": -52.922774,
+        "elevation": 73.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Island Meadow"],
+        "id": "dad904f9"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.922774, 46.891749] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Gunners Hole",
+        "notes": "Just north of the stream/bridge, off path about 40m to the west. Multiple spots to setup tents. Also many other good/great areas to tent in the area.",
+        "latitude": 47.471087,
+        "longitude": -52.690958,
+        "elevation": 25.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "e3463eda"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.690958, 47.471087] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Whirly Pool Falls",
+        "notes": "Established Just short of the trailhead, 1 or possibly 2 spots in among water falls area. May have to improvise for stake down points / guy lines if your shelter is non-freestanding.",
+        "latitude": 47.709134,
+        "longitude": -52.707909,
+        "elevation": 19.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "a4a0783d"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.707909, 47.709134] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Siles Cove",
+        "notes": "Semi-established Relatively sheltered area, somewhat flat and level, big enough for 1 or 2p shelter. Water just north at Freshwater River.",
+        "latitude": 47.44606,
+        "longitude": -52.68077,
+        "elevation": 11.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Motion"],
+        "id": "d1c884eb"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.68077, 47.44606] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Deep Cove",
+        "notes": "Side Trail with a small area. Could be tight, but useable.",
+        "latitude": 47.127965,
+        "longitude": -52.870717,
+        "elevation": 10.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "dc81119c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.870717, 47.127965] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Spout",
+        "notes": "Just North of the spout, right beside the trail. Small, fairly sheltered tent pad on the coast as well as stream with potential swim hole at the bottom. Pretty gorgeous - could be bad in high winds.",
+        "latitude": 47.366324,
+        "longitude": -52.726452,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "5744d2c0"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.726452, 47.366324] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Roaring Cove",
+        "notes": "-1 point because it's still quite run-down, maybe 1-2 of the 4(+?) tent pads are usable. Many standing dead trees could be extremely dangerous in winds!! Couldn't find the path to toilet (downed trees?) - still one or two flat spots to put tent and the river is nice so still a 5/6 (just not quite a Hilton) At least 4 platforms, water, toilet. Can be busy on weekends. When visiting this site was in extreme disrepair. All platforms were broken, toilet path was impossible to find due to downed trees, and there were many concerning trees around platforms and tent spaces that I would not have felt safe tenting under.",
+        "latitude": 47.13262,
+        "longitude": -52.86799,
+        "elevation": 10.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "51ccd16e"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.86799, 47.13262] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Freshwater",
+        "notes": "Established (abandoned settlement). Very good area, basically designated ECTA without the platforms. Look slightly inland for the toilet.",
+        "latitude": 47.31821,
+        "longitude": -52.74739,
+        "elevation": 12.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "694a9921"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.74739, 47.31821] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Potential Site",
+        "notes": "Less than ideal location (right beside road) but is sheltered and possibly better than anything for a few kms south due to exposure.",
+        "latitude": 47.520789,
+        "longitude": -52.63352,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "33594ded"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.63352, 47.520789] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Freshwater River",
+        "notes": "Semi-established Single small spot by side of trail, just past viewpoint and good stream. Note that a path water bar re-directs water through this area during rain.",
+        "latitude": 47.787592,
+        "longitude": -52.768579,
+        "elevation": 163.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Biscan Cove"],
+        "id": "4b445b72"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.768579, 47.787592] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Camp",
+        "notes": "Nowhere flat to put a tent. Best to cross to the other side of the rock bridge",
+        "latitude": 47.534167,
+        "longitude": -52.684798,
+        "elevation": 132.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "ef36acae"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.684798, 47.534167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinch Spot",
+        "notes": "Right beside path and stream, just a large semi-flat area. could grow over if unused",
+        "latitude": 47.440355,
+        "longitude": -52.672598,
+        "elevation": 3.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Motion"],
+        "id": "8267aab2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.672598, 47.440355] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Motion / Spout trail junction (walk to the coast)",
+        "notes": "Established at Motion / Spout trail junction (walk to the coast). Large field, but somewhat exposed. Water at Raymonds Gulch.",
+        "latitude": 47.392974,
+        "longitude": -52.714644,
+        "elevation": 11.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Motion", "Spout"],
+        "id": "2df1fef2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.714644, 47.392974] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bear Cove",
+        "notes": "Little semi-level spots to left and right of trail just north of bear cove Creek.",
+        "latitude": 46.938997,
+        "longitude": -52.893486,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "aaf592a7"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.893486, 46.938997] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Little River",
+        "notes": "Follow the lower side trail down. There May Be a dry spot next to the mouth of the river. Watch the tides though - they'll take you and your stuff for a ride.",
+        "latitude": 47.011674,
+        "longitude": -52.972533,
+        "elevation": 40.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "8311910c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.972533, 47.011674] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Beachy Cove",
+        "notes": "Just prior to the descent to Beachy Cove Brook. There's a couple of small grassy areas just off trail to the right. Be very stealthy and LNT in this area.",
+        "latitude": 47.617452,
+        "longitude": -52.871053,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Long Shore"],
+        "id": "79bf441e"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.871053, 47.617452] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Gallows Cove Camp",
+        "notes": "ECTA Established 4 platforms (3 usable), toilet, water just so-so (very small stream). (Ryan's Garden site is better)",
+        "latitude": 46.998204,
+        "longitude": -52.908646,
+        "elevation": 34.0,
+        "category": "campsite",
+        "site_quality": "6.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "7a7b4ae9"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.908646, 46.998204] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Flats",
+        "notes": "@ The Flats and several others areas. Many fields, some without fences, starting at about 5km thru 6.5km. Multiple small streams. Private land - FYI.",
+        "latitude": 47.680436,
+        "longitude": -52.716597,
+        "elevation": 91.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Father Troys Trail"],
+        "id": "dc9e2d6f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.716597, 47.680436] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Small Point",
+        "notes": "Established Large field on coast (wind / exposed: get a forecast), plus slightly sheltered area. Water 1/2 km north. Also a few tent spots back into the woods. Has ATV tracks, may be visited by locals (but they're all lovely)",
+        "latitude": 47.743688,
+        "longitude": -52.711033,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "63de0a95"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.711033, 47.743688] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Church Cove road",
+        "notes": "Established Sticking to Church Cove Road (instead of descending the loop) reveals a clearing in the woods to the left. Water just before this site.",
+        "latitude": 47.686921,
+        "longitude": -52.709318,
+        "elevation": 86.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Father Troys Trail"],
+        "id": "7423f6fc"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.709318, 47.686921] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bear Cove Point",
+        "notes": "Established Grassy field near lighthouse. A few other places to pitch just before / after the road leading to the lighthouse as well. Water is brown along this section. *** Do not settle here on an overcast night. The foghorn is every 30 seconds...",
+        "latitude": 46.941547,
+        "longitude": -52.892877,
+        "elevation": 3.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "11f076a0"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.892877, 46.941547] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Patch Brook",
+        "notes": "designated camp site. platform. most sites are exposed, caution if wind. Small spot in the wood with no platform.",
+        "latitude": 47.780448,
+        "longitude": -52.813446,
+        "elevation": 124.0,
+        "category": "campsite",
+        "site_quality": "6.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "ec3813e6"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.813446, 47.780448] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Freshwater Bay",
+        "notes": "Established ECTA Places on either side of bay, with the most established spots being at ~ 5.2km on the west side. Absolutely amazing, and spacious site. small sandy beach on the freshwater side! Gorgeous.",
+        "latitude": 47.534505,
+        "longitude": -52.689765,
+        "elevation": 41.0,
+        "category": "campsite",
+        "site_quality": "6.0",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "f815538d"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.689765, 47.534505] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Spot on cliff",
+        "notes": "Semi-exposed but gorgeous lookout spot on cliff, right on east side of the trail. Water about 100m north. Also many other good/great areas to tent in the area.",
+        "latitude": 47.470982,
+        "longitude": -52.692183,
+        "elevation": 23.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "64244cb2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.692183, 47.470982] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Freshwater Pond",
+        "notes": "Tiny path on north side of bridge leads up to the pond where there is some small semi-level camp spots and the pond (swimming!)",
+        "latitude": 47.144821,
+        "longitude": -52.869476,
+        "elevation": 69.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "5ad1eb9e"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.869476, 47.144821] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Howlett Point/Fairmouth Cove",
+        "notes": "Semi-established Follow side trail to the tip of the loop. One tiny nice site (keep it a secret, ok? LNT) So so water back at 3.9km or great ahead at 5km. The path is closed but this campground is safe to go. Randy FB's comment : You can hike the path in (about 1km) and grab some water on the way. You'll see en route that the path comes within 5 metres of the road. That would be my way out in the morning.",
+        "latitude": 47.009706,
+        "longitude": -52.920941,
+        "elevation": 7.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Sounding Hills"],
+        "id": "083a70ca"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.920941, 47.009706] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Baltimore Grounds",
+        "notes": "Virtually infinite number of places you could put a tent south of the high school. Lots of ATV tracks (and highschool) so you might want to choose your place carefully. Water south at stream.",
+        "latitude": 47.041192,
+        "longitude": -52.885543,
+        "elevation": 19.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Caplin Bay"],
+        "id": "f0a40a80"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.885543, 47.041192] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Boggy Bridge",
+        "notes": "Several grass spots on either side of the path. Little privacy if stopping early. Adequate water just before, or better water just after.",
+        "latitude": 47.787878,
+        "longitude": -52.773872,
+        "elevation": 88.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Biscan Cove"],
+        "id": "5894eeb5"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.773872, 47.787878] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Miners point 2",
+        "notes": "Little area on ATV tracks beside trail. South of Miners point. Aside from lack of bathroom, the tenting spot(s?) look flatter and better than at Miners point. Loses some points because of proximity to trail/ATV tracks - likely visited on fait weather weekends.",
+        "latitude": 47.400828,
+        "longitude": -52.708257,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "3.5",
+        "nearTrailTitles": ["Motion"],
+        "id": "36f046aa"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.708257, 47.400828] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bear Cove",
+        "notes": "Semi-established This section of path meets Route 10. Be discreet. Somewhat exposed. Great water source.",
+        "latitude": 46.882035,
+        "longitude": -52.934326,
+        "elevation": 4.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Island Meadow"],
+        "id": "254aa202"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.934326, 46.882035] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Middle Cove Beach",
+        "notes": "Established Grassy spot on north side of the (rocky) beach, exposed in windy conditions. Water / river near the southern end of the beach.",
+        "latitude": 47.651656,
+        "longitude": -52.69738,
+        "elevation": 14.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Silver Mine Head"],
+        "id": "4420be0c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.69738, 47.651656] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Long Point",
+        "notes": "Large area, but *very* exposed in windy conditions. Water is ~ 1km away in either direction.",
+        "latitude": 47.37703,
+        "longitude": -52.716221,
+        "elevation": 22.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "4fbe23af"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.716221, 47.37703] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cape Neddick",
+        "notes": "Coastal area / field, exposed (wind). Semi-flat, semi-level. Water north at Money Cove. Keep moving if you don't know the forecast.",
+        "latitude": 47.150646,
+        "longitude": -52.851441,
+        "elevation": 45.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "df35193f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.851441, 47.150646] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "La Manche site",
+        "notes": "Established (abandoned settlement) at path junctions. Nice area, but busy in summer. Very little shelter from coastal wind.",
+        "latitude": 47.16621562289849,
+        "longitude": -52.86711215972901,
+        "elevation": 18.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Flamber Head", "La Manche Village"],
+        "id": "1d4238ca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86711215972901, 47.16621562289849]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Miner's Point",
+        "notes": "ECTA Established Although this is ECTA, there are no tent platforms, so -1 point. Only about 2 good ground suitable sites, often claimed on the weekend.",
+        "latitude": 47.406017,
+        "longitude": -52.705557,
+        "elevation": 12.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Motion"],
+        "id": "f5c2fee8"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.705557, 47.406017] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bald Head",
+        "notes": "Small areas along the coast that are usable, but often windy. Better to go on to Freshwater.",
+        "latitude": 47.329835,
+        "longitude": -52.740383,
+        "elevation": 39.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Spout"],
+        "id": "1c040c34"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.740383, 47.329835] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Doctors Cove",
+        "notes": "Established Take the short side trail to coast & hang a left. One (maybe 2) nice grassy camp site(s) just past where the river reaches the ocean.",
+        "latitude": 47.169482,
+        "longitude": -52.859494,
+        "elevation": 12.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["La Manche Village"],
+        "id": "355e5c9f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.859494, 47.169482] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Peter\u2019s point",
+        "notes": "Very nice grassy lookout point, large enough for several tents. Very small stream just north.",
+        "latitude": 47.633218,
+        "longitude": -52.856433,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "c9b9c207"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.856433, 47.633218] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wades Cove",
+        "notes": "Semi-established Wades Cove trailhead sign. Grassy areas right around trailhead sign, but still away from the community. Great water flowing right out of small pond.",
+        "latitude": 47.051076,
+        "longitude": -52.86355,
+        "elevation": 18.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Cape Broyle Head"],
+        "id": "41f5a671"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.86355, 47.051076] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinkin's Brook",
+        "notes": "Passing through, saw no signs of a brook or a site. could pitch a tent around area if desperate. Established Just past Pinkin's Brook. There exists a few semi-level areas as the path climbs a hill. Conditions have to be very dry to sleep on the ground here.",
+        "latitude": 47.745858,
+        "longitude": -52.820558,
+        "elevation": 110.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "525fdbd5"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.820558, 47.745858] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nolan\u2019s Meadow",
+        "notes": "Semi-established Exposed field followed by some passable sheltered ares in the woods up to ~6.3km. Multiple water sources starting at 5.5km.",
+        "latitude": 47.249275,
+        "longitude": -52.826793,
+        "elevation": 34.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Beaches"],
+        "id": "5f7f0650"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.826793, 47.249275] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ragged Beach",
+        "notes": "Established Several other areas until about 500m south Grassy field behind trailhead, but fairly exposed to wind. Water just ahead at ~ 0.34km. This trailhead is at the end of a long country lane, so relatively remote, all things considered.",
+        "latitude": 47.261784,
+        "longitude": -52.811858,
+        "elevation": 5.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Beaches", "Mickeleens"],
+        "id": "0708d05a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.811858, 47.261784] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Shoe Cove",
+        "notes": "Possible Exposed Areas at 2.2km, and somewhat sheltered semi-flat/level areas after descending to the river. loads of space on the pebbly beach, great stream that is partially dammed-off to allow for a quick dip (brrrr)",
+        "latitude": 47.75767,
+        "longitude": -52.73595,
+        "elevation": 7.0,
+        "category": "campsite",
+        "site_quality": "4.5",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "c5b07069"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.73595, 47.75767] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Little Spot",
+        "notes": "Little mostly flat spot right beside path on south side of creek. Pretty protected and right beside good running water!",
+        "latitude": 47.484248,
+        "longitude": -52.662428,
+        "elevation": 160.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "b25ff253"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.662428, 47.484248] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Aquaforte River Falls",
+        "notes": "Big flat area just south of viewpoint to falls and north of highway. Right beside a highway but also close to the falls so it could be alright. Also a little spot further north, right before the before the side trail down to falls.",
+        "latitude": 47.011598,
+        "longitude": -52.9817,
+        "elevation": 46.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "51934c71"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.9817, 47.011598] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Goat Cove",
+        "notes": "Established Flat grassy area overlooking Goat Cove, it's brook and Bell Island. Exposed to coastal winds - get a forecast for wind.",
+        "latitude": 47.606004,
+        "longitude": -52.879565,
+        "elevation": 16.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Long Shore"],
+        "id": "a56f3c00"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.879565, 47.606004] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Junk Site",
+        "notes": "Small path to east leads to clearing with rusty junk and a small (semi-exposed) tent pad on the point.",
+        "latitude": 47.399763,
+        "longitude": -52.708619,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Motion"],
+        "id": "73d771f7"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.708619, 47.399763] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nook site",
+        "notes": "Little spot fairly sheltered",
+        "latitude": 47.529482,
+        "longitude": -52.662253,
+        "elevation": 35.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "f1e81cc8"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.662253, 47.529482] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nagles Garden",
+        "notes": "Semi-established A number of very nice sheltered grassy areas. Carry water from Beachy Cove, about 0.4km north. Close to community & ATV farm-type trails. Private land, so LNT with a vengeance.",
+        "latitude": 47.219468,
+        "longitude": -52.840575,
+        "elevation": 20.0,
+        "category": "campsite",
+        "site_quality": "5.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "9d58d4bb"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.840575, 47.219468] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Bull Cove",
+        "notes": "Less than ideal area on the coast to stop, but surely better in windy conditions than anywhere along the next 10km south. Water is just past the trailhead at the bridge.",
+        "latitude": 47.530212,
+        "longitude": -52.664036,
+        "elevation": 31.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "633a2fff"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.664036, 47.530212] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "ECTA Long Will Campsite",
+        "notes": "ECTA Established at Freshwater Point / Long Will Campsite. Beautiful area, 6 platforms - most could use some TLC, but are usable. Water just ok. Think about the wind before selecting a platform on the point. Beautiful beach access 1km on.",
+        "latitude": 47.07551,
+        "longitude": -52.8973,
+        "elevation": 51.0,
+        "category": "campsite",
+        "site_quality": "6.0",
+        "nearTrailTitles": ["Cape Broyle Head"],
+        "id": "2b43ab83"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.8973, 47.07551] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Camel Beach",
+        "notes": "Established Somewhat sheltered, fairly flat / level area just past river. Not on the treadway, but is just a few feet off. Expect traffic if you're stopping early.",
+        "latitude": 47.25313,
+        "longitude": -52.80405,
+        "elevation": 7.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Beaches"],
+        "id": "1f28f09a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.80405, 47.25313] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Site",
+        "notes": "little mostly flat spot beside Ennis Creek with a view over the bay.",
+        "latitude": 47.53847,
+        "longitude": -52.689041,
+        "elevation": 78.0,
+        "category": "campsite",
+        "site_quality": "2.5",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "3b4efe36"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.689041, 47.53847] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Burnt Cove",
+        "notes": "Semi-established Burnt Cove and several fields (exposed to wind) all the way to the trailhead. Several small streams depending on season, but there's a good source at southern trailhead.",
+        "latitude": 46.865558,
+        "longitude": -52.936792,
+        "elevation": 10.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Island Meadow"],
+        "id": "f54c6142"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.936792, 46.865558] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Site",
+        "notes": "Just off path to the west there is a large flat spot. Is visible from the trail, is protected but could still be windy. Several other reasonably-flat spots until about 500m south.",
+        "latitude": 47.617339,
+        "longitude": -52.65731,
+        "elevation": 109.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Sugarloaf"],
+        "id": "dd72ba77"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.65731, 47.617339] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sheltered Spot",
+        "notes": "Unknown water. Flat spot right beside trail",
+        "latitude": 46.876772,
+        "longitude": -52.936106,
+        "elevation": 16.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Island Meadow"],
+        "id": "b7cbc54a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.936106, 46.876772] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Site",
+        "notes": "Nice flat patch - good view. NO WATER",
+        "latitude": 47.777696,
+        "longitude": -52.813037,
+        "elevation": 140.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "4f5a6749"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.813037, 47.777696] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinch Spot",
+        "notes": "Not great, could put a tent here. Water unknown",
+        "latitude": 47.010026,
+        "longitude": -52.969645,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "3dd6fa77"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.969645, 47.010026] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinch Spot?",
+        "notes": "Really not great, but could pitch a small tent here if needed. Water unkown",
+        "latitude": 47.115145,
+        "longitude": -52.881543,
+        "elevation": 21.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "15b05567"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.881543, 47.115145] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Flamber Head 2",
+        "notes": "same deal - nice if ECTA site is full",
+        "latitude": 47.13433,
+        "longitude": -52.865476,
+        "elevation": 4.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "2602ba96"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.865476, 47.13433] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Flamber Head",
+        "notes": "Little Spot with several fairly flat tenting spots right off the trail. Reasonably protected. Good choice if ECTA site is full.",
+        "latitude": 47.134929,
+        "longitude": -52.865839,
+        "elevation": 8.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "86e16e71"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.865839, 47.134929] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nicks Cove",
+        "notes": "",
+        "latitude": 47.226371,
+        "longitude": -52.834698,
+        "elevation": 17.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "00271ec3"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.834698, 47.226371] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Campsite",
+        "notes": "not very level, fairly exposed from the north.",
+        "latitude": 47.701787,
+        "longitude": -52.844522,
+        "elevation": 240.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "02b001e4"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.844522, 47.701787] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Viewing Platform",
+        "notes": "NO WATER likely frequented by locals and certainly on private land. Sunset viewing platform overlooking Little Herring Cove Lake. Picknik tables, small gazebo",
+        "latitude": 47.74363,
+        "longitude": -52.819164,
+        "elevation": 161.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "9ed59b9a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.819164, 47.74363] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nice site",
+        "notes": "Big flat area right on the coast. Likely visited by 4x4ers",
+        "latitude": 47.758669,
+        "longitude": -52.738296,
+        "elevation": 50.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "8c1b636a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.738296, 47.758669] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Site",
+        "notes": "semi-flat area just off the main path",
+        "latitude": 47.760763,
+        "longitude": -52.747355,
+        "elevation": 45.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "64f252f5"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.747355, 47.760763] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cripple Cove 2",
+        "notes": "NO WATER quite exposed but gorgeous. About 100m down the path towards the cripple cove lookout. no natural shade at all",
+        "latitude": 47.804744,
+        "longitude": -52.80414,
+        "elevation": 17.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "d2cb1a76"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.80414, 47.804744] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Potential Site",
+        "notes": "one small fairly flat pad, no water. immediately beside trail",
+        "latitude": 47.75258,
+        "longitude": -52.817057,
+        "elevation": 187.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "e32b43b3"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.817057, 47.75258] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Empty Basket Cove",
+        "notes": "Tiny protected spot in woods to east. Just big enough for a 2p, but it's small.",
+        "latitude": 47.493428,
+        "longitude": -52.637567,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.5",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "55e55b25"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.637567, 47.493428] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sculpin Bay",
+        "notes": "WATER IS BROWN along this section (add hot chocolate and try to forget it). Some fields, very exposed for ~500m before and after waypoint. Water carry from Klondike.",
+        "latitude": 46.920329,
+        "longitude": -52.917293,
+        "elevation": 80.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "2043f23c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.917293, 46.920329] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Red Cliff Battery",
+        "notes": "NO WATER - carry from Cobbler Brook. Semi-established at Red Cliff Site and for the next 1km.",
+        "latitude": 47.64586,
+        "longitude": -52.66292,
+        "elevation": 135.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Cobblers"],
+        "id": "0017f2cf"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.66292, 47.64586] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Deep Cove Point",
+        "notes": "NO WATER - Water just a few hundred metres back. Semi-established Just past Deep Cove Point. Semi flat / level area to the right of treadway. Woodcutting area?",
+        "latitude": 47.232768,
+        "longitude": -52.827195,
+        "elevation": 16.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "32925eb9"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.827195, 47.232768] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "South Point",
+        "notes": "NO WATER - Water is brown along this section. May be able to make a spot work on this side trail. Water carry from Bear Cove River (north) or Klondike River (south).",
+        "latitude": 46.935876,
+        "longitude": -52.895264,
+        "elevation": 4.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "7edd4d6f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.895264, 46.935876] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Devils Hollow",
+        "notes": "NO WATER Semi-established Small somewhat sheltered area right beside the path, but no water.",
+        "latitude": 47.10454,
+        "longitude": -52.871935,
+        "elevation": 60.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Brigus Head"],
+        "id": "bcfa33f4"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.871935, 47.10454] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Prince's Ridge",
+        "notes": "NO WATER Established Just past Prince's Lookout. This area is likely frequented by local ATV users.",
+        "latitude": 47.624368,
+        "longitude": -52.847476,
+        "elevation": 164.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Long Shore"],
+        "id": "3d53a698"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.847476, 47.624368] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Cripple Cove",
+        "notes": "NO WATER Semi-established There are a few clearings on the side trail to the coast. They can be seen from the main trail - grassy, but no water & partially exposed to the coastline / it's wind.",
+        "latitude": 47.80282,
+        "longitude": -52.804925,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "ced0dad4"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.804925, 47.80282] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Camp at start of Island Meadow trail",
+        "notes": "MAYBE WATER - Small streams depending on season, may have to carry. Established Several places to pitch near the start of this path from ~ 0.5 to 1.5km.",
+        "latitude": 46.918318,
+        "longitude": -52.940734,
+        "elevation": 9.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Bear Cove Point"],
+        "id": "85746c0e"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.940734, 46.918318] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Campsite",
+        "notes": "incredibly windy & exposed, could technically camp here in a pinch",
+        "latitude": 47.612284,
+        "longitude": -52.861914,
+        "elevation": 202.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Long Shore"],
+        "id": "645bd8e2"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.861914, 47.612284] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Vales Meadow",
+        "notes": "NO WATER Established Just past Vales Meadow. A few semi sheltered areas to the left of treadway with evidence of past camping.",
+        "latitude": 47.225527,
+        "longitude": -52.826666,
+        "elevation": 5.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "c2b86d1b"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.826666, 47.225527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Potential Site",
+        "notes": "On the right about 20m towards cripple cove lookout. only enough space for 2-3 small tents (maybe)",
+        "latitude": 47.803902,
+        "longitude": -52.803988,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "2d681d8a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.803988, 47.803902] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinch Spot",
+        "notes": "Just beside the path is a small, somewhat level spot. Has barely enough protection to make it possible",
+        "latitude": 47.515763,
+        "longitude": -52.629987,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Cape Spear"],
+        "id": "8bc8dcee"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.629987, 47.515763] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "White Horse Trailhead",
+        "notes": "NO WATER Water at Bauline or 500m further on at Pincomb's Brook. Just past southern trailhead. The trail crosses a few small semi-level fields just outside / overlooking Bauline.",
+        "latitude": 47.725944,
+        "longitude": -52.831943,
+        "elevation": 32.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "5eab3baa"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.831943, 47.725944] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Church Cove Meadow",
+        "notes": "NO WATER - Possibility of tiny water sources over the next 2km onward. Semi-established Excellent huge meadow. May have to carry water. There's been a picnic table here for years. It is private property - please LNT, the land owners are saints.",
+        "latitude": 47.064214,
+        "longitude": -52.866645,
+        "elevation": 97.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Cape Broyle Head"],
+        "id": "acaa0953"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.866645, 47.064214] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sandy Cove",
+        "notes": "NO WATER Nearest water north 1km at Shoe Cove. Large somewhat exposed semi flat area. Would likely be dicey in windy conditions. Lots of berries in season.",
+        "latitude": 47.758845,
+        "longitude": -52.728054,
+        "elevation": 78.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "d3dafb1a"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.728054, 47.758845] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hollow Cove",
+        "notes": "Didn't really see it on our walk. NO WATER Water just north, small stream. Semi exposed field.",
+        "latitude": 47.760405,
+        "longitude": -52.746561,
+        "elevation": 201.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "7d2d89fc"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.746561, 47.760405] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "potential campsite",
+        "notes": "Small uneven tent pad, quite exposed to wind. no water",
+        "latitude": 47.710312,
+        "longitude": -52.83923,
+        "elevation": 206.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["Piccos Ridge"],
+        "id": "67cccd0b"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.83923, 47.710312] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Campsite",
+        "notes": "Has a raised tent platform.",
+        "latitude": 47.624365,
+        "longitude": -52.848214,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Long Shore"],
+        "id": "4481c9bd"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.848214, 47.624365] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Pinch Spot",
+        "notes": "Small semi-flat mossy spot right beside trail just north of viewpoint. Could do in a pinch. No water near.",
+        "latitude": 47.096261,
+        "longitude": -52.873899,
+        "elevation": 23.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Brigus Head"],
+        "id": "f2efdfd1"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.873899, 47.096261] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nice site!",
+        "notes": "Unsure about water - has nice pebbly beach with lots of space & a picnic table!",
+        "latitude": 47.213236,
+        "longitude": -52.841551,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "4.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "38ce3a1f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.841551, 47.213236] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Potential Sites",
+        "notes": "a few semi level areas right beside the trail. no water",
+        "latitude": 47.756153,
+        "longitude": -52.814218,
+        "elevation": 90.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "d07f1f3c"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.814218, 47.756153] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Potential Spot",
+        "notes": "Several semi-flat areas. NO WATER. little wind protection. nice view",
+        "latitude": 47.801434,
+        "longitude": -52.800774,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "3fd6ae14"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.800774, 47.801434] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Nice Site",
+        "notes": "Small level patch covered in hearth. nice view, pretty sheltered.",
+        "latitude": 47.758372,
+        "longitude": -52.739114,
+        "elevation": 63.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Stiles Cove"],
+        "id": "5c22ebdb"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.739114, 47.758372] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Possible Tenting Spot",
+        "notes": "Not amazing, but could pitch a small tent here. Water unknown",
+        "latitude": 47.231399,
+        "longitude": -52.826079,
+        "elevation": 9.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "896cc39f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.826079, 47.231399] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Birch Point",
+        "notes": "NO WATER Approximately at Birch Point. Small semi flat area on the lookout, likely terrible in windy conditions. It would have to be a very calm night or you'd have to be desperate to stop here.",
+        "latitude": 47.736509360056175,
+        "longitude": -52.82459378242493,
+        "elevation": 175.0,
+        "category": "campsite",
+        "site_quality": "1.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "5fdcabbc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.82459378242493, 47.736509360056175]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Small point",
+        "notes": "NO WATER - Have to carry from Freshwater Bay or walk ahead to ~ 7.4km. Semi-established at Small Point and for the next 2km.",
+        "latitude": 47.538018,
+        "longitude": -52.6768,
+        "elevation": 54.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Deadmans Bay"],
+        "id": "e8fba429"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.6768, 47.538018] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Polly Butts Gulch",
+        "notes": "NO WATER Established Woodcutting / bushcraft / camping area. About 3 unlevel spots. Grab water en route.",
+        "latitude": 47.79757,
+        "longitude": -52.780869,
+        "elevation": 10.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Biscan Cove"],
+        "id": "532c8181"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.780869, 47.79757] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Big Cove",
+        "notes": "NO WATER - There is water in the area, but only in wet conditions (inland marsh). Small single area, somewhat sheltered.",
+        "latitude": 47.294977,
+        "longitude": -52.772183,
+        "elevation": 33.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Mickeleens"],
+        "id": "931ab38f"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.772183, 47.294977] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kearney's Beach / Vales Meadow",
+        "notes": "NO WATER Exposed costal field, good only on a very calm evening.",
+        "latitude": 47.228001,
+        "longitude": -52.82696,
+        "elevation": 9.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Tinkers Point"],
+        "id": "fc8187b1"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.82696, 47.228001] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Berry Head",
+        "notes": "There has been some camping here in the past, but it's less than an ideal spot, as it's rather exposed in windy conditions.",
+        "latitude": 46.998467,
+        "longitude": -52.900114,
+        "elevation": 9.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Spurwink Island"],
+        "id": "d3c91cb8"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.900114, 46.998467] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Herring Cove",
+        "notes": "MAYBE WATER - Very small water source - may be dry. Side Trail with a small area just before sign.",
+        "latitude": 47.104993,
+        "longitude": -52.878308,
+        "elevation": 29.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Brigus Head"],
+        "id": "f5172671"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.878308, 47.104993] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Big Cove",
+        "notes": "Didn't see this one when walking through. (Could be there, wasn't really looking) NO WATER - Great water 1.5km ahead. Sheltered area. Semi-level / flat.",
+        "latitude": 47.145613,
+        "longitude": -52.85915,
+        "elevation": 58.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Flamber Head"],
+        "id": "04045b1d"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.85915, 47.145613] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Black Cliff",
+        "notes": "NO WATER Just before northern trailhead. Grassy area, relatively sheltered from wind but close to access road. For water, walk to road and turn left down the hill.",
+        "latitude": 47.806048,
+        "longitude": -52.789068,
+        "elevation": 0.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["White Horse"],
+        "id": "fd78d56d"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.789068, 47.806048] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Small Camp",
+        "notes": "Just west, beside trail there's a small mossy clearing",
+        "latitude": 46.913052,
+        "longitude": -52.932234,
+        "elevation": 12.0,
+        "category": "campsite",
+        "site_quality": "3.0",
+        "nearTrailTitles": ["Island Meadow"],
+        "id": "79a32edc"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.932234, 46.913052] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Island Cove",
+        "notes": "MAYBE WATER - Very small, has intermittent stream. Exposed field (wind?), semi-flat, semi-level. Few other similar fields for next 1.5km",
+        "latitude": 47.29597,
+        "longitude": -52.77888,
+        "elevation": 44.0,
+        "category": "campsite",
+        "site_quality": "2.0",
+        "nearTrailTitles": ["Mickeleens"],
+        "id": "390d009b"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.77888, 47.29597] }
+    }
+  ]
+}
